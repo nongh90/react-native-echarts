@@ -8,6 +8,9 @@
 
 $ npm install native-echarts --save
 
+#### Android
+将 tpl.html 文件拷贝至 android/app/src/main/assets/htmls 文件夹下
+
 ## Usage
 
 The Usage is complete consistent with Echarts
