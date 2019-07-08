@@ -23,10 +23,10 @@ export default class App extends Component {
 
   render() {
     let source = "";
-    if(__DEV__){
-      source = require("./tpl.html");
+    if(Platform.OS === 'android'){
+      source = {uri:"file:///android_asset/htmls/tpl.html"};
     }else {
-        source = Platform.OS == "ios" ? require("./tpl.html") : {uri:"file:///android_asset/htmls/tpl.html"} ;
+        source =  require("./tpl.html");
     }
 
     return (
